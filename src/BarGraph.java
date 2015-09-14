@@ -58,6 +58,10 @@ public class BarGraph
         p.move(-250, sety + num1); //move up by the amount stated by user 
         p.move(-210, sety + num1); //make the bar have a width of 40
         p.move(-210, sety); //go back down to the orignal starting point
+        p.up();
+        p.move(-245, sety + num1 + 30);
+        p.down();
+        p.drawString("" + num1);
         
         p.setColor(Color.MAGENTA); //repeat
         p.up();
