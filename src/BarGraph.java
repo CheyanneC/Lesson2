@@ -48,44 +48,46 @@ public class BarGraph
         SketchPadWindow win = new SketchPadWindow(600, 400);
         StandardPen p = new StandardPen(win);
         
-        //the bars were also hollow before you told us not to
+        int sety = -130;
         
+        p.setWidth(40);
         p.setColor(Color.BLUE); //set color for first bar
         p.up(); 
-        p.move(-250, -150); //move to starting position
+        p.move(-250, sety); //move to starting position
         p.down();
-        p.move(-250, -150 + num1); //move up by the amount stated by user 
-        p.move(-210, -150 + num1); //make the bar have a width of 40
-        p.move(-210, -150); //go back down to the orignal starting point
+        p.move(-250, sety + num1); //move up by the amount stated by user 
+        p.move(-210, sety + num1); //make the bar have a width of 40
+        p.move(-210, sety); //go back down to the orignal starting point
         
         p.setColor(Color.MAGENTA); //repeat
         p.up();
-        p.move(-125, -150); //move bar over 85
+        p.move(-125, sety); //move bar over 85
         p.down();
-        p.move(-125, -150 + num2);
-        p.move(-85, -150 + num2);
-        p.move(-85, -150);
+        p.move(-125, sety + num2);
+        p.move(-85, sety + num2);
+        p.move(-85, sety);
         
         p.setColor(Color.RED);
         p.up();
-        p.move(0, -150);
+        p.move(0, sety);
         p.down();
-        p.move(0, -150 + num3);
-        p.move(40, -150 + num3);
-        p.move(40, -150);
+        p.move(0, sety + num3);
+        p.move(40, sety + num3);
+        p.move(40, sety);
         
         p.setColor(Color.GREEN);
         p.up();
-        p.move(125, -150);
+        p.move(125, sety);
         p.down();
-        p.move(125, -150 + num4);
-        p.move(165, -150 + num4);
-        p.move(165, -150);
+        p.move(125, sety + num4);
+        p.move(165, sety + num4);
+        p.move(165, sety);
         
+        p.setWidth(2);
         p.setColor(Color.BLACK); //draw line on the bottom of all the bars 
         p.up();
-        p.move(-250, -150);
+        p.move(-270, -150);
         p.down();
-        p.move(165, -150);
+        p.move(185, -150);
     }
 }
