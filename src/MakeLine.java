@@ -7,9 +7,9 @@ public class MakeLine
     {
         Console c = new Console();
         
-        int sx, sy, ex, ey;
+        int sx, sy, ex, ey; //'startx', 'endx', etc.
         
-        c.print("Start point x: ");
+        c.print("Start point x: "); //ask user for x and y for both start and end
         sx = c.readInt();
         c.print("Start point y: ");
         sy = c.readInt();
@@ -22,10 +22,10 @@ public class MakeLine
         StandardPen p = new StandardPen(win);
         
         p.up();
-        p.move(sx - 200, sy - 200);
+        p.move(sx - 200, sy - 200); //move to starting spot
         p.down();
-        p.drawString("(" + sx + ", " + sy + ")");
-        p.move(ex - 200, ey - 200);
-        p.drawString("(" + ex + ", " + ey + ")");
+        p.drawString("(" + sx + ", " + sy + ")"); //write the positon
+        p.move(ex - 200, ey - 200); //move to end point
+        p.drawString("(" + ex + ", " + ey + ")"); //write the position
     }
 }
