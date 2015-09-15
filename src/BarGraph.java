@@ -70,6 +70,10 @@ public class BarGraph
         p.move(-125, sety + num2);
         p.move(-85, sety + num2);
         p.move(-85, sety);
+        p.up();
+        p.move(-120, sety + num1 + 30);
+        p.down();
+        p.drawString("" + num1);
         
         p.setColor(Color.RED);
         p.up();
@@ -78,6 +82,10 @@ public class BarGraph
         p.move(0, sety + num3);
         p.move(40, sety + num3);
         p.move(40, sety);
+        p.up();
+        p.move(5, sety + num1 + 30);
+        p.down();
+        p.drawString("" + num1);
         
         p.setColor(Color.GREEN);
         p.up();
@@ -86,6 +94,10 @@ public class BarGraph
         p.move(125, sety + num4);
         p.move(165, sety + num4);
         p.move(165, sety);
+        p.up();
+        p.move(130, sety + num1 + 30);
+        p.down();
+        p.drawString("" + num1);
         
         p.setWidth(2);
         p.setColor(Color.BLACK); //draw line on the bottom of all the bars 
