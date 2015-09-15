@@ -50,7 +50,7 @@ public class BarGraph
         
         int sety = -130;
         
-        p.setWidth(40);
+        p.setWidth(40); //set thickness to have a full bar
         p.setColor(Color.BLUE); //set color for first bar
         p.up(); 
         p.move(-250, sety); //move to starting position
@@ -58,10 +58,10 @@ public class BarGraph
         p.move(-250, sety + num1); //move up by the amount stated by user 
         p.move(-210, sety + num1); //make the bar have a width of 40
         p.move(-210, sety); //go back down to the orignal starting point
-        p.up();
-        p.move(-245, sety + num1 + 30);
+        p.up(); //move up 
+        p.move(-245, sety + num1 + 30); //go to positon to write text
         p.down();
-        p.drawString("" + num1);
+        p.drawString("" + num1); //right num1 value
         
         p.setColor(Color.MAGENTA); //repeat
         p.up();
